@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Devart (www.devart.com), the Project File -->
+<!-- Modifying this generated file will probably render it invalid -->
+<DatabaseProject Version="1.0.1" Guid="00ea5d29-f6be-4bab-b6f1-3a9533746546">
+  <Provider Guid="59f90733-4d68-4fdf-82a7-f0fcbf5460aa" />
+  <Include>
+    <Folder Name="Views" />
+    <Folder Name="Functions" />
+    <Folder Name="Triggers" />
+    <Folder Name="Events" />
+    <File RelPath="Tables" Link=".\Tables\cards.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\installment.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\person.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\purchase.Table.sql" />
+    <File RelPath="Procedures" Link=".\Procedures\person_add.Procedure.sql" />
+    <File RelPath="Procedures" Link=".\Procedures\purchase_add.Procedure.sql" />
+    <File RelPath="" Link=".\PostDeployment.sql" />
+    <File RelPath="" Link=".\PreDeployment.sql" />
+  </Include>
+  <Configurations Active="Default">
+    <Configuration Name="Default" CheckReferences="True" IgnoreErrors="False" OutputPath="" Target="" OutputType="SingleFile" KeepOriginalObjects="True" RecreateObjects="False" RecreateDatabase="False" ServerVersion="5.7.18" Database="billing" UseRegions="False" FullPaths="False" Definer="CURRENT_USER" ScriptDelimiter="$$" StorageEngine="INNODB" Collation="utf8_general_ci" ConvertToLowercase="True" DefinerEffect="Keep">
+      <Connection Name="MySQL57" Category="00000000-0000-0000-0000-000000000000" ConnectionString="User Id=root;Host=localhost;Port=3306" />
+      <Build>
+        <File RelPath="" Name="PreDeployment.sql" BuildAction="Build" />
+        <File RelPath="Tables" Name="cards.Table.sql" BuildAction="Build" />
+        <File RelPath="Tables" Name="installment.Table.sql" BuildAction="Build" />
+        <File RelPath="Tables" Name="person.Table.sql" BuildAction="Build" />
+        <File RelPath="Tables" Name="purchase.Table.sql" BuildAction="Build" />
+        <File RelPath="Procedures" Name="person_add.Procedure.sql" BuildAction="Build" />
+        <File RelPath="Procedures" Name="purchase_add.Procedure.sql" BuildAction="Build" />
+        <File RelPath="" Name="PostDeployment.sql" BuildAction="Build" />
+      </Build>
+    </Configuration>
+  </Configurations>
+</DatabaseProject>
