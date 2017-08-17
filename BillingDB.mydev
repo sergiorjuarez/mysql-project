@@ -4,16 +4,18 @@
 <DatabaseProject Version="1.0.1" Guid="00ea5d29-f6be-4bab-b6f1-3a9533746546">
   <Provider Guid="59f90733-4d68-4fdf-82a7-f0fcbf5460aa" />
   <Include>
-    <Folder Name="Views" />
+    <Folder Name="Events" />
     <Folder Name="Functions" />
     <Folder Name="Triggers" />
-    <Folder Name="Events" />
-    <File RelPath="Tables" Link=".\Tables\cards.Table.sql" />
-    <File RelPath="Tables" Link=".\Tables\installment.Table.sql" />
-    <File RelPath="Tables" Link=".\Tables\person.Table.sql" />
-    <File RelPath="Tables" Link=".\Tables\purchase.Table.sql" />
+    <Folder Name="Views" />
     <File RelPath="Procedures" Link=".\Procedures\person_add.Procedure.sql" />
     <File RelPath="Procedures" Link=".\Procedures\purchase_add.Procedure.sql" />
+    <File RelPath="Tables" Link=".\Tables\cards.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\installment.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\log.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\person.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\purchase.Table.sql" />
+    <File RelPath="Tables" Link=".\Tables\users.Table.sql" />
     <File RelPath="" Link=".\PostDeployment.sql" />
     <File RelPath="" Link=".\PreDeployment.sql" />
   </Include>
@@ -28,6 +30,10 @@
         <File RelPath="Tables" Name="purchase.Table.sql" BuildAction="Build" />
         <File RelPath="Procedures" Name="person_add.Procedure.sql" BuildAction="Build" />
         <File RelPath="Procedures" Name="purchase_add.Procedure.sql" BuildAction="Build" />
+        <File RelPath="" Name="PostDeployment.sql" BuildAction="Build" />
+        <File RelPath="Tables" Name="users.Table.sql" BuildAction="Build" />
+        <File RelPath="" Name="PostDeployment.sql" BuildAction="Build" />
+        <File RelPath="Tables" Name="log.Table.sql" BuildAction="Build" />
         <File RelPath="" Name="PostDeployment.sql" BuildAction="Build" />
       </Build>
     </Configuration>

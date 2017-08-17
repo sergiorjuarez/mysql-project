@@ -6,6 +6,7 @@ CREATE TABLE person (
   Name varchar(45) DEFAULT NULL,
   Phone varchar(45) DEFAULT NULL,
   Email varchar(95) DEFAULT NULL,
+  LastChangedOn datetime DEFAULT NULL,
   PRIMARY KEY (Id)
 )
 ENGINE = INNODB

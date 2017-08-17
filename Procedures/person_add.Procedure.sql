@@ -6,8 +6,8 @@ DELIMITER $$
 CREATE PROCEDURE person_add (IN pName varchar(50), IN pPhone varchar(50), IN pEmail varchar(80))
 BEGIN
 
-  INSERT INTO billing.person (name, phone, Email)
-    VALUE (pName, pPhone, pEmail);
+  INSERT INTO billing.person (name, phone, Email, LastChangedOn)
+    VALUE (pName, pPhone, pEmail, CURRENT_DATE());
 
 END
 $$

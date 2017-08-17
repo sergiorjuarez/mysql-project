@@ -1,0 +1,16 @@
+CREATE TABLE log (
+  Id int(11) NOT NULL AUTO_INCREMENT,
+  OccurredOn datetime NOT NULL,
+  OperationName varchar(45) NOT NULL,
+  UserId int(11) NOT NULL,
+  Description varchar(150) DEFAULT NULL,
+  PRIMARY KEY (Id),
+  INDEX Log_User_idx (UserId),
+  CONSTRAINT Log_User FOREIGN KEY (UserId)
+  REFERENCES users (Id) ON DELETE NO ACTION ON UPDATE NO ACTION
+)
+ENGINE = INNODB
+AUTO_INCREMENT = 1
+CHARACTER SET utf8
+COLLATE utf8_general_ci
+ROW_FORMAT = DYNAMIC;
